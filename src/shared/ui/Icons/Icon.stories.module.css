@@ -1,0 +1,24 @@
+.storyWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: calc(100dvh - 2rem);
+}
+
+.flexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.iconInfo {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  width: 180px;
+  height: 100px;
+}
