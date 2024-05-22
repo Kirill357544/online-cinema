@@ -20,7 +20,8 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
-    "baseUrl": ".",
+    "baseUrl": "./",
+    "esModuleInterop": true,
     "paths": {
       "@app/*": ["src/app/*"],
       "@pages/*": ["src/pages/*"],
