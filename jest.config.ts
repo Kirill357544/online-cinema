@@ -9,7 +9,7 @@ const config: Config = {
   testMatch: [
     '<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)',
   ],
-  // setupFilesAfterEnv: ['<rootDir>config/jest/jest-setup.ts'],
+  setupFilesAfterEnv: ['<rootDir>jest-setup.ts'],
   moduleNameMapper: {
     '\\.css$': 'identity-obj-proxy',
     '@app/(.*)': '<rootDir>/src/app/$1',
