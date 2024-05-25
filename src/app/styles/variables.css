@@ -1,3 +1,5 @@
+@import './fonts.css';
+
 :root {
   --bg-normal: #fff;
   --bg-normal-hovered: #e3e7eb;
@@ -144,8 +146,12 @@
   --border-radius-xl: 100%;
   --border-radius-2xl: 999999px;
 
+  --font-weight-thin: 100;
+  --font-weight-extra-light: 200;
+  --font-weight-light: 300;
   --font-weight-regular: 400;
-  --font-weight-bold: 700;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
 
   --spacing-none: 0;
   --spacings-3xs: 4px;
