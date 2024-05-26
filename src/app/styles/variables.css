@@ -172,4 +172,8 @@
   --transitions-slow: .3s ease-in-out;
 
   --icon-sizes-m: 24px;
+
+  --spinner-sizes-s: 25px;
+  --spinner-sizes-m: 40px;
+  --spinner-sizes-l: 60px;
 }
