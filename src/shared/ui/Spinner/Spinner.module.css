@@ -1,8 +1,8 @@
 .spinner {
   display: inline-block;
 
-  border-top: 3px solid;
-  border-right: 3px solid transparent;
+  border-top: var(--border-width-l) solid;
+  border-right: var(--border-width-l) solid transparent;
   box-sizing: border-box;
 
   animation: rotation 1s linear infinite;

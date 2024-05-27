@@ -165,8 +165,9 @@
   --spacings-3xl: 56px;
 
   --border-width-none: 0;
-  --border-width-m: 1px;
-  --border-width-l: 2px;
+  --border-width-s: 1px;
+  --border-width-m: 2px;
+  --border-width-l: 3px;
 
   --transitions-default: .12s ease-in-out;
   --transitions-slow: .3s ease-in-out;
@@ -176,4 +177,31 @@
   --spinner-sizes-s: 25px;
   --spinner-sizes-m: 40px;
   --spinner-sizes-l: 60px;
+
+  --font-family-main: Raleway, Verdana, sans-serif, sans-serif;
+
+  --typography-headline-one-font-size: 2rem;
+  --typography-headline-one-line-height: 2.25rem;
+  --typography-headline-two-font-size: 1.5rem;
+  --typography-headline-two-line-height: 1.75rem;
+  --typography-headline-three-font-size: 1.25rem;
+  --typography-headline-three-line-height: 1.5rem;
+  --typography-headline-four-font-size: 1.125rem;
+  --typography-headline-four-line-height: 1.5rem;
+  --typography-title-one-font-size: 7.5rem;
+  --typography-title-one-line-height: 7.5rem;
+  --typography-title-two-font-size: 6rem;
+  --typography-title-two-line-height: 6rem;
+  --typography-title-three-font-size: 4rem;
+  --typography-title-three-line-height: 4rem;
+  --typography-title-four-font-size: 3.5rem;
+  --typography-title-four-line-height: 3.5rem;
+  --typography-sub-headline-font-size: .875rem;
+  --typography-sub-headline-line-height: 1.25rem;
+  --typography-body-one-font-size: 1rem;
+  --typography-body-one-line-height: 1.5rem;
+  --typography-body-two-font-size: .875rem;
+  --typography-body-two-line-height: 1.25rem;
+  --typography-body-large-font-size: 1.25rem;
+  --typography-body-large-line-height: 1.75rem;
 }
