@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Raleway';
   src: local('Raleway'),
-       url('../../../public/fonts/Raleway-Thin.ttf') format('woff2');
+       url('../assets/fonts/Raleway-Thin.ttf') format('woff2');
   font-weight: 100;
   font-display: swap;
 }
@@ -9,7 +9,7 @@
 @font-face {
   font-family: 'Raleway';
   src: local('Raleway'),
-       url('../../../public/fonts/Raleway-ExtraLight.ttf') format('woff2');
+       url('../assets/fonts/Raleway-ExtraLight.ttf') format('woff2');
   font-weight: 200;
   font-display: swap;
 }
@@ -17,7 +17,7 @@
 @font-face {
   font-family: 'Raleway';
   src: local('Raleway'),
-       url('../../../public/fonts/Raleway-Light.ttf') format('woff2');
+       url('../assets/fonts/Raleway-Light.ttf') format('woff2');
   font-weight: 300;
   font-display: swap;
 }
@@ -25,7 +25,7 @@
 @font-face {
   font-family: 'Raleway';
   src: local('Raleway'),
-       url('../../../public/fonts/Raleway-Regular.ttf') format('woff2');
+       url('../assets/fonts/Raleway-Regular.ttf') format('woff2');
   font-weight: 400;
   font-display: swap;
 }
@@ -33,7 +33,7 @@
 @font-face {
   font-family: 'Raleway';
   src: local('Raleway'),
-       url('../../../public/fonts/Raleway-Medium.ttf') format('woff2');
+       url('../assets/fonts/Raleway-Medium.ttf') format('woff2');
   font-weight: 500;
   font-display: swap;
 }
@@ -41,7 +41,7 @@
 @font-face {
   font-family: 'Raleway';
   src: local('Raleway'),
-       url('../../../public/fonts/Raleway-SemiBold.ttf') format('woff2');
+       url('../assets/fonts/Raleway-SemiBold.ttf') format('woff2');
   font-weight: 600;
   font-display: swap;
 }
