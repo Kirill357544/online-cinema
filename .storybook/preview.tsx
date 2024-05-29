@@ -2,7 +2,7 @@ import React from 'react';
 import { ArgTypes, Title, Subtitle, Description, Primary } from '@storybook/blocks';
 import type { Preview } from '@storybook/react';
 
-import '@app/styles/styles.css'
+import '@shared/styles/styles.css'
 
 const preview: Preview = {
   parameters: {
