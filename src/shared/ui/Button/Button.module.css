@@ -21,8 +21,8 @@
   border-radius: var(--border-radius-m);
 
   font-family: var(--font-family-main);
-  font-size: var(--cui-typography-body-one-font-size);
-  line-height: var(--cui-typography-body-one-line-height);
+  font-size: var(--typography-body-one-font-size);
+  line-height: var(--typography-body-one-line-height);
   font-weight: var(--font-weight-semi-bold);
 
   &:disabled {
@@ -36,8 +36,8 @@
 
   &:focus-visible {
     outline: none;
-    box-shadow: 0px 0px 0px 2px var(--cui-bg-normal),
-                0px 0px 0px 4px var(--cui-border-focus);
+    box-shadow: 0px 0px 0px 2px var(--bg-normal),
+                0px 0px 0px 4px var(--border-focus);
   }
 
   &.loading {

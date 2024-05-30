@@ -1,0 +1,139 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacings-3xs);
+
+  width: 275px;
+
+  color: var(--fg-normal);
+  background-color: transparent;
+
+  font-family: var(--font-family-main);
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacings-3xs);
+}
+
+.labelText {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  font-size: var(--typography-body-two-font-size);
+  line-height: var(--typography-body-two-line-height);
+}
+
+.required {
+  &::after {
+    content: '\00a0*';
+    color: var(--fg-danger);
+  }
+}
+
+.textField {
+  display: flex;
+  align-items: center;
+  gap: var(--spacings-s);
+
+  padding: var(--spacings-xs) var(--spacings-s);
+
+  box-shadow: 0 0 0 1px var(--border-normal);
+  border-radius: var(--border-radius-s);
+
+  color: var(--fg-subtle);
+  background-color: var(--bg-normal);
+
+  transition: box-shadow var(--transitions-default);
+
+  &:hover {
+    box-shadow: 0 0 0 1px var(--border-normal-hovered);
+  }
+
+  &:focus-within {
+    box-shadow: 0 0 0 2px var(--border-accent);
+  }
+}
+
+.input {
+  flex-grow: 1;
+
+  outline: none;
+  border: none;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  color: var(--fg-accent);
+  background-color: transparent;
+
+  font-size: var(--typography-body-one-font-size);
+  line-height: var(--typography-body-one-line-height);
+
+  &::placeholder {
+    text-overflow: ellipsis;
+
+    color: var(--fg-placeholder);
+  }
+}
+
+.helperText {
+  font-size: var(--typography-body-two-font-size);
+  line-height: var(--typography-body-two-line-height);
+
+  overflow-wrap: break-word;
+  text-align: justify;
+
+  color: var(--fg-subtle);
+}
+
+.readOnly {
+  background-color: var(--bg-subtle-disabled);
+}
+
+.disabled {
+  & .label {
+    cursor: not-allowed;
+    color: var(--fg-normal-disabled);
+  }
+
+  & .helperText {
+    color: var(--fg-subtle-disabled);
+  }
+
+  & .textField {
+    color: var(--fg-normal-disabled);
+    background-color: var(--bg-normal-disabled);
+    box-shadow: 0 0 0 1px var(--border-normal-disabled);
+  }
+
+  & .input {
+    cursor: not-allowed;
+    color: var(--fg-normal-disabled);
+  }
+}
+
+.error {
+  & .textField {
+    box-shadow: 0 0 0 1px var(--border-danger);
+
+    &:hover {
+      box-shadow: 0 0 0 1px var(--border-danger-hovered);
+    }
+
+    &:focus-within {
+      box-shadow: 0 0 0 2px var(--border-danger);
+    }
+  }
+
+  & .helperText {
+    color: var(--fg-danger);
+  }
+}
