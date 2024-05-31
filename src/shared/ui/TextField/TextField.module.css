@@ -7,8 +7,6 @@
 
   color: var(--fg-normal);
   background-color: transparent;
-
-  font-family: var(--font-family-main);
 }
 
 .fullWidth {
