@@ -20,7 +20,6 @@
 
   border-radius: var(--border-radius-m);
 
-  font-family: var(--font-family-main);
   font-size: var(--typography-body-one-font-size);
   line-height: var(--typography-body-one-line-height);
   font-weight: var(--font-weight-semi-bold);

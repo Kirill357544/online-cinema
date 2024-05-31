@@ -1,7 +1,15 @@
 @import './variables.css';
 @import './reset.css';
 
-.two {
-  font-family: Raleway, Verdana, sans-serif;
-  font-weight: 400;
+body {
+  min-height: 100dvh;
+  max-height: 100dvh;
+  overflow: auto;
+
+  font-family: var(--font-family-main);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--typography-body-one-font-size);
+  line-height: var(--typography-body-one-line-height);
+
+  color: var(--fg-normal);
 }
