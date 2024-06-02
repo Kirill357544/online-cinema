@@ -20,7 +20,7 @@ describe('TextField component', () => {
 
   it('should call onChange callback when value is change', () => {
     render(<TextField data-testid='text-field' defaultValue='Some value' />);
-    fireEvent.change(screen.getByTestId('text-field'), {target: {value: 'Some value'}});
+    fireEvent.change(screen.getByTestId('text-field'), { target: { value: 'Some value' } });
     expect(screen.getByTestId('text-field')).toHaveValue('Some value');
   });
 });
