@@ -1,0 +1,124 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacings-3xs);
+
+  width: 275px;
+
+  color: var(--fg-normal);
+  background-color: transparent;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacings-3xs);
+}
+
+.labelText {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  font-size: var(--typography-body-two-font-size);
+  line-height: var(--typography-body-two-line-height);
+}
+
+.required {
+  &::after {
+    content: '\00a0*';
+    color: var(--fg-danger);
+  }
+}
+
+.textarea {
+  padding: var(--spacings-xs) var(--spacings-s);
+
+  color: var(--fg-accent);
+  background-color: transparent;
+
+  font-size: var(--typography-body-one-font-size);
+  line-height: var(--typography-body-one-line-height);
+
+  box-shadow: 0 0 0 1px var(--border-normal);
+  outline: none;
+  border: none;
+  border-radius: var(--border-radius-s);
+
+  resize: vertical;
+
+  transition: box-shadow var(--transitions-default);
+
+  &::placeholder {
+    text-overflow: ellipsis;
+
+    color: var(--fg-placeholder);
+  }
+
+  &:hover {
+    box-shadow: 0 0 0 1px var(--border-normal-hovered);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px var(--border-accent);
+  }
+}
+
+.readOnly {
+  background-color: var(--bg-subtle-disabled);
+}
+
+.helperText {
+  font-size: var(--typography-body-two-font-size);
+  line-height: var(--typography-body-two-line-height);
+
+  overflow-wrap: break-word;
+  text-align: justify;
+
+  color: var(--fg-subtle);
+}
+
+.disabled {
+  & .label {
+    cursor: not-allowed;
+    color: var(--fg-normal-disabled);
+  }
+
+  & .helperText {
+    color: var(--fg-subtle-disabled);
+  }
+
+  & .textarea {
+    color: var(--fg-normal-disabled);
+    background-color: var(--bg-normal-disabled);
+    box-shadow: 0 0 0 1px var(--border-normal-disabled);
+
+    cursor: not-allowed;
+  }
+}
+
+.error {
+  & .textarea {
+    box-shadow: 0 0 0 1px var(--border-danger);
+
+    &:hover {
+      box-shadow: 0 0 0 1px var(--border-danger-hovered);
+    }
+
+    &:focus-within {
+      box-shadow: 0 0 0 2px var(--border-danger);
+    }
+  }
+
+  & .helperText {
+    color: var(--fg-danger);
+  }
+}
+
+.autoResize {
+  resize: none;
+}
