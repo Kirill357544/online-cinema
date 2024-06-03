@@ -1,0 +1,40 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 42px;
+  height: 42px;
+
+  border: none;
+  outline: none;
+  border-radius: var(--border-radius-2xl);
+  background-color: transparent;
+
+  transition: transform var(--transitions-default);
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0px 0px 0px 2px var(--bg-normal),
+                0px 0px 0px 4px var(--border-focus);
+  }
+}
+
+.star {
+  color: var(--bg-warning-strong);
+  transition: fill var(--transitions-default);
+}
+
+.hovered {
+  fill: var(--bg-warning-strong);
+}

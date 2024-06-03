@@ -2,7 +2,7 @@ import { fireEvent, screen, render } from '@testing-library/react';
 
 import { Textarea } from './Textarea';
 
-describe('TextField component', () => {
+describe('Textarea component', () => {
   it('should be mount', () => {
     render(<Textarea data-testid='textarea' />);
     expect(screen.getByTestId('textarea')).toBeInTheDocument();

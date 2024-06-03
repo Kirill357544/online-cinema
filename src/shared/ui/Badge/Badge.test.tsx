@@ -2,7 +2,7 @@ import { screen, render } from '@testing-library/react';
 
 import { Badge } from './Badge';
 
-describe('Button component', () => {
+describe('Badge component', () => {
   it('should be mount', () => {
     render(<Badge data-testid='badge' title='Badge' />);
     expect(screen.getByTestId('badge')).toBeInTheDocument();
