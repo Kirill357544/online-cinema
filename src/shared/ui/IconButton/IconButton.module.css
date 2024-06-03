@@ -1,0 +1,7 @@
+.iconButton {
+  padding: var(--spacings-xs);
+}
+
+.isRound {
+  border-radius: var(--border-radius-2xl);
+}
