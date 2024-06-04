@@ -2,7 +2,7 @@ import { screen, render } from '@testing-library/react';
 
 import { Spinner } from './Spinner';
 
-describe('Button component', () => {
+describe('Spinner component', () => {
   it('should be mount', () => {
     render(<Spinner data-testid='spinner' />);
     expect(screen.getByTestId('spinner')).toBeInTheDocument();
