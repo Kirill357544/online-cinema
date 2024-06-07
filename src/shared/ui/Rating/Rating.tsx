@@ -13,6 +13,7 @@ export type RatingProps = {
 
 export const Rating: FC<RatingProps> = ({ size = 5, rating, onChange, ...props }) => {
   const [hover, setHover] = useState<number | null>(null);
+  const [focus, setFocus] = useState<number | null>(null);
 
   return (
     <div className={styles.root} {...props}>
@@ -26,8 +27,10 @@ export const Rating: FC<RatingProps> = ({ size = 5, rating, onChange, ...props }
             onClick={() => onChange(value)}
             onMouseEnter={() => setHover(value)}
             onMouseLeave={() => setHover(null)}
+            onFocus={() => setFocus(value)}
+            onBlur={() => setFocus(null)}
           >
-            <StarIcon className={classNames(styles.star, (hover || rating) >= value && styles.hovered)} />
+            <StarIcon className={classNames(styles.star, (hover || focus || rating) >= value && styles.hovered)} />
           </button>
         );
       })}
