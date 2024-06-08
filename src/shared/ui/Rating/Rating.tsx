@@ -30,7 +30,7 @@ export const Rating: FC<RatingProps> = ({ size = 5, rating, onChange, ...props }
             onFocus={() => setFocus(value)}
             onBlur={() => setFocus(null)}
           >
-            <StarIcon className={classNames(styles.star, (hover || focus || rating) >= value && styles.hovered)} />
+            <StarIcon className={classNames(styles.star, (hover ?? focus ?? rating) >= value && styles.hovered)} />
           </button>
         );
       })}
