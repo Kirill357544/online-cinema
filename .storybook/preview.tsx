@@ -4,7 +4,10 @@ import type { Preview } from '@storybook/react';
 
 import '@shared/styles/styles.css'
 
+import { decorators } from './decorators';
+
 const preview: Preview = {
+  decorators,
   parameters: {
     controls: {
       matchers: {
@@ -16,9 +19,9 @@ const preview: Preview = {
       page: () => (
         <>
           <Title />
-          < Subtitle />
+          <Subtitle />
           <Description />
-          < Primary />
+          <Primary />
           <ArgTypes />
         </>
       ),
