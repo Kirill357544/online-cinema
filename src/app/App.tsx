@@ -35,8 +35,6 @@ export const App: FC = () => {
           <Button>test</Button>
         </div>
       </Modal>}
-
-      <div id='modal' />
     </div>
   );
 };
