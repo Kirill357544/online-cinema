@@ -16,10 +16,11 @@ export const Layout: FC<LayoutProps> = ({
   renderMain,
   renderRightSidebar,
   renderFooter,
+  ...props
 }) => {
   return (
     <>
-      <div className={styles.root}>
+      <div className={styles.root} {...props}>
         {renderHeader && <header>{renderHeader()}</header>}
         <div className={styles.content}>
           {renderLeftSidebar && <aside>{renderLeftSidebar()}</aside>}
