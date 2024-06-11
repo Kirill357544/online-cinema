@@ -8,6 +8,7 @@ import '@shared/styles/styles.css';
 import { Button } from '@shared/ui/Button';
 import { useThemeContext } from '@shared/providers/ThemeProvider';
 import { Modal } from '@shared/ui/Modal/Modal';
+import { Counter } from '@entities/Counter';
 
 export const App: FC = () => {
   const [rating, setRating] = useState(5);
@@ -35,6 +36,8 @@ export const App: FC = () => {
           <Button>test</Button>
         </div>
       </Modal>}
+
+      <Counter />
     </div>
   );
 };
